@@ -1,0 +1,84 @@
+#contact {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAzyR5m9VhXKOcWEX-wJ1dwTTiX30pH0vtdw&usqp=CAU');
+    background-size: contain;
+    font-family: "Copse", serif;
+}
+
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+#card {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.fade-in-up {
+    animation: fade-in-up 0.5s ease forwards;
+}
+
+.fade-in-bottom {
+    animation: fade-in-bottom 0.5s ease forwards;
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.quote {
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .quote {
+        margin-top: 20px;
+    }
+}
+
+#submit {
+    font-size: 20px;
+    font-family: "Copse", serif;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: #2aef31;
+    color: #000000;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 1rem;
+}
+
+#submit:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 600px) {
+    #contact .contact-form {
+        text-align: center;
+    }
+}

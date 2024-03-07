@@ -1,0 +1,86 @@
+#navbar {
+    overflow: hidden;
+    background-color: #F9A825;
+    width: 100%;
+    position: absolute;
+    padding: 20px 20px;
+    transition: top 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+#navbar a {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Copse", serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+    margin: 5px;
+    border-radius: 2rem;
+}
+
+#navbar a.red {
+    background-color: #DB4437;
+}
+
+#navbar a.green {
+    background-color: #0F9D58;
+}
+
+#navbar a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+#navbar a.red:hover {
+    color: #f9f9f9;
+    background-color: #FD2828;
+}
+
+#navbar a.green:hover {
+    color: #ffffff;
+    background-color: #29f756;
+}
+
+#navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #78a2e1;
+}
+
+#navbar.sticky a.active {
+    background-color: #106298;
+    color: white;
+}
+
+#navbar a.active {
+    background-color: #1827ca;
+    color: white;
+}
+
+#navbar a.active:hover {
+    background-color: #515ccf;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links a {
+        margin: 5px;
+    }
+}
